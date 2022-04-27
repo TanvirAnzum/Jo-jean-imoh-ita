@@ -1,0 +1,191 @@
+/* default styles */
+
+/* font import */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
+
+/* font import ends */
+
+/* variables */
+
+:root {
+  /* font sizes */
+  --fs-sm: 0.8125em;
+  --fs-reg: 1em;
+  --fs-mreg: 1.125em;
+  --fs-md: 1.5em;
+  --fs-lg: 2.2em;
+  --fs-xl: 3.1em;
+
+  /* font weights */
+
+  --fw-bold: 700;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-extra-light: 200;
+
+  /* colors */
+
+  --p-clr: #029837;
+  --bg-clr: #f7fff6;
+  --sbg-clr: #010133;
+  --wht-clr: white;
+}
+
+/* variables ends */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Mulish", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+/* default codes ends */
+
+/* compostions */
+
+.header-area {
+  width: 100vw;
+  min-height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+
+.header > * {
+  flex: 1;
+}
+
+/* utilities */
+
+/* font sizes */
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.fs-reg {
+  font-size: var(--fs-reg);
+}
+
+.fs-mreg {
+  font-size: var(--fs-mreg);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+/* font sizes end */
+
+/* font weight starts */
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.light {
+  font-weight: var(--fw-light);
+}
+
+.regular {
+  font-weight: var(--fw-regular);
+}
+
+.e-light {
+  font-weight: var(--fw-extra-light);
+}
+
+/* font weight ends */
+
+/* color profiles */
+
+.primary-color {
+  color: var(--p-clr);
+}
+
+.white-bg {
+  background-color: var(--wht-clr);
+}
+
+.primary-bg {
+  background-color: var(--p-clr);
+}
+
+.secondary-bg {
+  background-color: var(--bg-clr);
+}
+
+.tertiary-bg {
+  background-color: var(--sbg-clr);
+}
+/* color profiles ends */
+
+/* button styles */
+
+.btn {
+  width: 9.8em;
+  height: 3.375em;
+  border-radius: 1.25em;
+}
+
+.ls-none {
+  list-style-type: none;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.border {
+  border: 2px solid tomato;
+}
+
+.fit {
+  height: 100%;
+}
+
+.inline-gap {
+  padding-inline: 2em;
+}
+
+.start {
+  justify-self: start;
+  justify-content: start;
+}
+
+/* end of utilites */
+/* blocks */
+
+/* exceptions */
