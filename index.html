@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Business and Coaching Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
-      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <link
       rel="stylesheet"
@@ -23,51 +22,81 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- utility css -->
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/homepage.css" />
   </head>
   <body>
-    <div class="[ header-area ] [ white-bg border ]">
-      <header class="header border">
-        <div class="header__img">
-          <img src="./images/logo.png" alt="" />
-        </div>
-        <nav class="header__nav fit border">
-          <ul class="ls-none">
-            <li class="inline inline-gap"><a href="./index.html">Home</a></li>
-            <li class="inline inline-gap"><a href="./index.html">About</a></li>
-            <li class="inline inline-gap">
-              <a href="./index.html">Services</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="fit border">
-          <button class="btn">Contact Us</button>
-        </div>
-      </header>
-    </div>
+    <!-- header-area starts -->
 
-    <!-- hero area starts-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light area-90 mx-auto fs-reg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+            </ul>
 
-    <div class="hero-area">
-      <div class="hero">
-        <div class="hero__text">
-          <h1>Marriage and Relationship Coaching</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet
-            et hendrerit in, accumsan tempus erat.
-          </p>
-          <button class="">Book Now</button>
-        </div>
-        <div class="hero__banner">
-          <div class="hero__img">
-            <img src="./images/hero.png" alt="" />
+            <button class="btn fs-reg primary-color">Contact Us</button>
           </div>
-          <div class="hero__box">
-            <div class="hero__circle">
-              <p>90%</p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header-area ends -->
+
+    <!-- hero area starts -->
+
+    <div class="container-fluid px-0">
+      <div class="container wide-90 py">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="fs-xl">Marriage and Relationship Coaching</h1>
+            <p class="fs-reg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in, accumsan tempus erat.
+            </p>
+            <button class="btn primary-bg white-clr">Book Now</button>
+          </div>
+          <div class="col-lg-6 hero-banner">
+            <div class="float-end relative">
+              <img class="bg-img" src="./images/background-img.png" alt="" />
+              <img class="hero-img" src="./images/service.png" alt="" />
+              <div class="hero-box white-bg">
+                <img class="align-middle" src="./images/Group77.png" alt="" />
+                <p class="fs-sm bold inline align-middle p-top">
+                  Success <br />
+                  Result
+                </p>
+              </div>
             </div>
-            <h4>Success Result</h4>
           </div>
         </div>
       </div>
@@ -75,189 +104,300 @@
 
     <!-- hero area ends -->
 
-    <!-- services area starts -->
+    <!-- service area starts -->
 
-    <div class="services-area">
-      <div class="services">
-        <div class="services__img">
-          <img src="./images/service.png" alt="" />
-        </div>
-        <div class="services__items">
-          <h2>We offer the best services</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet
-            et hendrerit in, accumsan tempus erat.Nullam ornare blandit urna.
-          </p>
-          <ul>
-            <li>
-              <i class="fa-solid fa-circle-check"></i> Post Marital Coaching
-            </li>
-            <li>
-              <i class="fa-solid fa-circle-check"></i> Pre Marital Coaching
-            </li>
-            <li><i class="fa-solid fa-circle-check"></i> Virtual Coaching</li>
-          </ul>
-          <button>Book Now</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- services area ends -->
-
-    <!-- taglines area starts  -->
-
-    <div class="taglines-area">
-      <div class="taglines">
-        <div class="row">
-          <div class="taglines__header">
-            <h1>The Perfect Solution to your Relationship Issues</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus
-            </p>
+    <div class="container-fluid px-0">
+      <div class="container wide-90 py">
+        <div class="row align-items-center">
+          <div class="col-lg-6 relative">
+            <img
+              class="bg-img bg-down"
+              src="./images/background-img.png"
+              alt=""
+            />
+            <img src="./images/hero.png" alt="" />
           </div>
-        </div>
-        <div class="row">
-          <div class="taglines__box">
-            <img src="./images/emojione-monotone_ring.png" alt="" />
-            <h3>Pre Marital Coaching</h3>
-            <p>
+          <div class="col-lg-6">
+            <h2 class="fs-md bold">We offer the best services</h2>
+            <p class="fs-reg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus erat.
+              imperdiet et hendrerit in, accumsan tempus erat.Nullam ornare
+              blandit urna.
             </p>
-            <button>Learn More</button>
-          </div>
-          <div class="taglines__box">
-            <img src="./images/emojione-monotone_ring.png" alt="" />
-            <h3>Pre Marital Coaching</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus erat.
-            </p>
-            <button>Learn More</button>
-          </div>
-          <div class="taglines__box">
-            <img src="./images/emojione-monotone_ring.png" alt="" />
-            <h3>Pre Marital Coaching</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus erat.
-            </p>
-            <button>Learn More</button>
+            <ul class="ls-none fs-reg">
+              <li class="p-bottom">
+                <i class="fa-solid fa-circle-check primary-color"></i> Post
+                Marital Coaching
+              </li>
+              <li class="p-bottom">
+                <i class="fa-solid fa-circle-check primary-color"></i> Pre
+                Marital Coaching
+              </li>
+              <li class="p-bottom">
+                <i class="fa-solid fa-circle-check primary-color"></i> Virtual
+                Coaching
+              </li>
+            </ul>
+            <button class="btn primary-color">Book Now</button>
           </div>
         </div>
       </div>
     </div>
+    <!-- service area ends -->
 
-    <!-- taglines area ends -->
+    <!-- taglines area starts -->
+
+    <div class="container-fluid px-0">
+      <div class="container wide-90 py">
+        <div class="row justify-content-center align-items-center p-bottom">
+          <div class="col-lg-5 col-md-8 col-12">
+            <div class="taglines-header">
+              <h1 class="fs-lg bold">
+                The Perfect Solution to your Relationship Issues
+              </h1>
+              <p class="fs-reg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                consectetur justo quis euismod vehicula. Quisque diam dui,
+                imperdiet et hendrerit in, accumsan tempus
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center p-bottom">
+          <div class="taglines-box col-lg-3 col-md-8 col-12 shadow py round-1">
+            <img
+              class="secondary-bg border"
+              src="./images/emojione-monotone_ring.png"
+              alt=""
+            />
+            <h3 class="fs-md bold">Pre Marital Coaching</h3>
+            <p class="fs-regular light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in, accumsan tempus erat.
+            </p>
+            <button class="btn primary-color">Learn More</button>
+          </div>
+          <div
+            class="taglines-box offset-lg-1 col-lg-3 col-md-8 col-12 shadow py round-1"
+          >
+            <img
+              class="secondary-bg border"
+              src="./images/emojione-monotone_ring.png"
+              alt=""
+            />
+            <h3 class="fs-md bold">Pre Marital Coaching</h3>
+            <p class="fs-regular light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in, accumsan tempus erat.
+            </p>
+            <button class="btn primary-color">Learn More</button>
+          </div>
+          <div
+            class="taglines-box offset-lg-1 col-lg-3 col-md-8 col-12 shadow py round-1"
+          >
+            <img
+              class="secondary-bg border"
+              src="./images/emojione-monotone_ring.png"
+              alt=""
+            />
+            <h3 class="fs-md bold">Pre Marital Coaching</h3>
+            <p class="fs-regular light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in, accumsan tempus erat.
+            </p>
+            <button class="btn primary-color">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- taglines end -->
 
     <!-- feedback area starts -->
-
-    <div class="feedback-areas">
-      <div class="feedback">
-        <div class="row">
-          <h1>What our customers say about us</h1>
+    <div
+      class="container-fluid px-0 secondary-bg high-90 d-flex align-items-center relative"
+    >
+      <img
+        src="./images/Group113.png"
+        alt=""
+        class="feedback-bg-top absolute"
+      />
+      <img
+        src="./images/Group113.png"
+        alt=""
+        class="feedback-bg-bottom absolute"
+      />
+      <div class="container wide-90">
+        <div class="row justify-content-center align-content-center py">
+          <div class="col-lg-5 col-md-8 col-12 white">
+            <h1 class="fs-xl bold text-center">
+              What our customers say about us
+            </h1>
+          </div>
         </div>
-        <div class="row">
-          <div class="feedback__box">
-            <div class="feedback__title">
-              <img src="./images/Ellipse12.png" alt="" />
-              <div>
-                <p>ChiChi</p>
-                <p>South Africa</p>
+        <div class="row justify-content-center align-content-center py">
+          <div class="col-lg-3 col-md-8 col-12 white-bg shadow round-1 py">
+            <div class="feedback__title py">
+              <div class="upper-row p-bottom">
+                <img src="./images/Ellipse12.png" alt="" />
+                <div>
+                  <p class="fs-sm bold">
+                    ChiChi<br />
+                    South Africa
+                  </p>
+                </div>
+                <img class="quoation-img" src="./images/quations.png" alt="" />
               </div>
-              <img src="./images/quations.png" alt="" />
+              <p class="fs-reg light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                consectetur justo quis euismod vehicula. Quisque diam dui,
+                imperdiet et
+              </p>
             </div>
           </div>
-          <div class="feedback__box">
-            <div class="feedback__title">
-              <img src="./images/Ellipse13.png" alt="" />
-              <div>
-                <p>Queen Rita</p>
-                <p>USA</p>
+          <div
+            class="col-lg-3 col-md-8 col-12 offset-lg-1 white-bg shadow round-1 py"
+          >
+            <div class="feedback__title py">
+              <div class="upper-row p-bottom">
+                <img src="./images/Ellipse13.png" alt="" />
+                <div>
+                  <p class="fs-sm bold">
+                    Queen Rita <br />
+                    USA
+                  </p>
+                </div>
+                <img class="quoation-img" src="./images/quations.png" alt="" />
               </div>
-              <img src="./images/quations.png" alt="" />
+              <p class="fs-reg light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                consectetur justo quis euismod vehicula. Quisque diam dui,
+                imperdiet et
+              </p>
             </div>
           </div>
-          <div class="feedback__box">
-            <div class="feedback__title">
-              <img src="./images/Ellipse14.png" alt="" />
-              <div>
-                <p>Gloria Uko</p>
-                <p>Nigeria</p>
+          <div
+            class="col-lg-3 col-md-8 col-12 offset-lg-1 white-bg shadow round-1 py"
+          >
+            <div class="feedback__title py">
+              <div class="upper-row p-bottom">
+                <img src="./images/Ellipse14.png" alt="" />
+                <div>
+                  <p class="fs-sm bold">
+                    Gloria Uko<br />
+                    Nigeria
+                  </p>
+                </div>
+                <img class="quoation-img" src="./images/quations.png" alt="" />
               </div>
-              <img src="./images/quations.png" alt="" />
+              <p class="fs-reg light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                consectetur justo quis euismod vehicula. Quisque diam dui,
+                imperdiet et
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- feedback area ends -->
 
-    <!-- newsletter area  starts-->
+    <!-- newsletter starts -->
 
-    <div class="newsletter-area">
-      <div class="newsletter">
-        <h1>Subscribe to our newsletter</h1>
-        <p>
-          We recommend you to subscribe to our newsletter , drop your email
-          below to get daliy update about us
-        </p>
-        <form action="#">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email address"
-          />
-          <button>Subscribe</button>
-        </form>
+    <div
+      class="container-fluid px-0 white-bg d-flex align-items-center high-50"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-content-center">
+          <div class="col-lg-7 col-md-8 col-12 text-center">
+            <h1 class="fs-lg">Subscribe to our newsletter</h1>
+            <p class="fs-reg p-bottom">
+              We recommend you to subscribe to our newsletter , drop your email
+              below to get daliy update about us
+            </p>
+            <form action="#" class="p-top d-flex align-items-center">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+              <button class="btn primary-bg white-clr">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- footer area starts -->
+    <!-- newsletter ends -->
 
-    <div class="footer-area">
-      <footer class="footer">
-        <div class="row">
-          <div class="footer__logo">
-            <img src="./images/logo.png" alt="" />
-            <p>88/89 Peter Odili Road, Port Harcourt, Rivers State.</p>
+    <!-- footer starts -->
+
+    <footer
+      class="container-fluid px-0 d-flex align-items-center high-50 tertiary-bg"
+    >
+      <div class="container wide-90 py white-clr">
+        <div class="row justify-content-center align-items-start">
+          <div class="col-lg-2 col-md-3 col-6 order-3 order-md-1">
+            <div class="footer__logo p-bottom">
+              <img src="./images/logo_2.png" alt="" />
+              <p class="fs-reg light p-top">
+                88/89 Peter Odili Road, Port Harcourt, Rivers State.
+              </p>
+            </div>
           </div>
-          <div class="footer__link">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Sign Up</a></li>
+          <div class="col-lg-1 col-md-3 col-6 offset-lg-2 order-1 order-md-2">
+            <ul class="ls-none">
+              <li class="p-bottom"><a class="white-clr" href="#">Home</a></li>
+              <li class="p-bottom"><a class="white-clr" href="#">About</a></li>
+              <li class="p-bottom">
+                <a class="white-clr" href="#">Sign Up</a>
+              </li>
             </ul>
           </div>
-          <div class="footer__link">
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+          <div class="col-lg-2 col-md-3 col-6 offset-lg-1 order-2 order-md-3">
+            <ul class="ls-none">
+              <li class="p-bottom">
+                <a class="white-clr" href="#">Services</a>
+              </li>
+              <li class="p-bottom">
+                <a class="white-clr" href="#">Contact</a>
+              </li>
+              <li class="p-bottom">
+                <a class="white-clr" href="#">Privacy Policy</a>
+              </li>
             </ul>
           </div>
-          <div class="footer__connect">
+          <div class="col-lg-2 col-md-3 col-6 offset-lg-2 order-4 order-md-4">
             <p>Connect With Us</p>
             <div class="footer__media">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook p-right"></i>
+              <i class="fa-brands fa-instagram p-right"></i>
+              <i class="fa-brands fa-twitter p-right"></i>
               <i class="fa-brands fa-linkedin"></i>
             </div>
           </div>
         </div>
-        <div class="row">
-          <p>© Jo-Jean Imoh-Ita. All right reserved. Designed by AMANi Art</p>
+        <div class="row justify-content-center align-items-center py">
+          <div class="col-lg-6 col-md-8 col-10">
+            <p class="text-center fs-reg white-clr light">
+              © Jo-Jean Imoh-Ita. All right reserved. Designed by AMANi Art
+            </p>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
-    <!-- footer area ends -->
+    <!-- footer ends -->
+    <!-- bootstra script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

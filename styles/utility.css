@@ -1,5 +1,3 @@
-/* default styles */
-
 /* font import */
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
@@ -27,20 +25,22 @@
   /* colors */
 
   --p-clr: #029837;
-  --bg-clr: #f7fff6;
+  --bg-clr: #d3fcce;
   --sbg-clr: #010133;
   --wht-clr: white;
 }
 
 /* variables ends */
 
+/* default coding */
+
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Mulish", sans-serif; */
-  font-family: "Ubuntu", sans-serif;
   max-width: 100%;
   max-height: 100%;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h1,
@@ -56,31 +56,70 @@ p {
 a {
   text-decoration: none;
 }
-/* default codes ends */
 
-/* compostions */
+/* defualt coding ends */
 
-.header-area {
-  width: 100vw;
-  min-height: 14vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* utilites */
 
-.header {
+/* area related values */
+.area-90 {
   width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-items: start;
+  height: auto;
 }
 
-.header > * {
-  flex: 1;
+.wide-90 {
+  min-width: 90%;
 }
 
-/* utilities */
+.wide-40 {
+  width: 40%;
+}
+
+.wide-50 {
+  width: 50%;
+}
+
+.wide-60 {
+  width: 60%;
+}
+
+.wide-80 {
+  width: 80%;
+}
+
+.high-90 {
+  min-height: 90vh;
+}
+
+.high-80 {
+  min-height: 80vh;
+}
+.high-60 {
+  min-height: 60vh;
+}
+.high-50 {
+  min-height: 50vh;
+}
+.high-20 {
+  min-height: 20vh;
+}
+.high-10 {
+  min-height: 10vh;
+}
+
+/* area related value ends */
+
+/* position related values */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* position ends */
 
 /* font sizes */
 .fs-sm {
@@ -139,6 +178,10 @@ a {
   background-color: var(--wht-clr);
 }
 
+.white-clr {
+  color: var(--wht-clr);
+}
+
 .primary-bg {
   background-color: var(--p-clr);
 }
@@ -157,35 +200,75 @@ a {
 .btn {
   width: 9.8em;
   height: 3.375em;
+  border: 1px solid var(--p-clr);
   border-radius: 1.25em;
 }
 
-.ls-none {
-  list-style-type: none;
+/* button styles ends */
+
+/* padding style starts */
+
+.p-bottom {
+  padding-bottom: 1em;
 }
 
-.inline {
-  display: inline-block;
+.p-top {
+  padding-top: 1em;
 }
+
+.py {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.p-right {
+  padding-right: 1em;
+}
+
+.p-left {
+  padding-left: 1em;
+}
+
+.p-around {
+  padding: 1em;
+}
+
+/* padding styles ends */
+
+/* border styles start */
 
 .border {
   border: 2px solid tomato;
 }
 
-.fit {
-  height: 100%;
+.round-1 {
+  border-radius: 1em;
 }
 
-.inline-gap {
-  padding-inline: 2em;
+/* border styles end */
+
+/* shadow and text centering */
+
+.shadow {
+  -webkit-box-shadow: 5px 1px 15px 1px #000000;
+  box-shadow: 5px 1px 15px 1px #000000;
 }
 
-.start {
-  justify-self: start;
-  justify-content: start;
+.text-center {
+  text-align: center;
+}
+
+/* ul list styles */
+
+.ls-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* box behaviour */
+
+.inline {
+  display: inline-block;
 }
 
 /* end of utilites */
-/* blocks */
-
-/* exceptions */

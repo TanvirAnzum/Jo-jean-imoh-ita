@@ -1,0 +1,87 @@
+/* compositions */
+
+/* hero area starts */
+
+.hero-box {
+  width: 40%;
+  height: 20%;
+  /* border: 2px solid red; */
+  border-radius: 1em;
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+  -webkit-box-shadow: 5px 1px 15px 1px #000000;
+  box-shadow: 5px 1px 15px 1px #000000;
+}
+
+.bg-img {
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+}
+
+.bg-down {
+  top: 0;
+}
+
+.hero-img {
+  border-top-left-radius: 50%;
+}
+
+/* hero area ends */
+
+/* taglines area stars */
+
+.taglines-header {
+  text-align: center;
+}
+
+/* tagline area ends */
+
+/* feedback section */
+
+.feedback-bg-top {
+  top: 0;
+  right: 0;
+}
+
+.feedback-bg-bottom {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr 1fr;
+  align-items: center;
+}
+
+.upper-row p {
+  margin: 0;
+}
+
+.quoation-img {
+  justify-self: end;
+}
+
+/* feedback section ends */
+
+/* newsletter section */
+
+form {
+  gap: 1em;
+}
+
+form > input {
+  width: 80%;
+  height: 3.375em;
+  border-radius: 1.25em;
+  border: none;
+  background-color: #f2f1f1;
+  padding-left: 1em;
+}
+
+/* newsletter section ends */
+
+/* compositions end */

@@ -1,0 +1,38 @@
+/* hero area starts */
+
+.bg-img {
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+}
+
+.bg-down {
+  top: 0;
+}
+
+.hero-img {
+  border-top-left-radius: 50%;
+}
+
+/* newsletter section */
+
+form {
+  gap: 1em;
+}
+
+form > input {
+  width: 80%;
+  height: 3.375em;
+  border-radius: 1.25em;
+  border: none;
+  background-color: #f2f1f1;
+  padding-left: 1em;
+}
+
+/* newsletter section ends */
+
+/* buttons */
+
+.btn-main {
+  width: 30em;
+}

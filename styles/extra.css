@@ -1,0 +1,318 @@
+/* default styles */
+
+/* font import */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
+
+/* font import ends */
+
+/* variables */
+
+:root {
+  /* font sizes */
+  --fs-sm: 0.8125em;
+  --fs-reg: 1em;
+  --fs-mreg: 1.125em;
+  --fs-md: 1.5em;
+  --fs-lg: 2.2em;
+  --fs-xl: 3.1em;
+
+  /* font weights */
+
+  --fw-bold: 700;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-extra-light: 200;
+
+  /* colors */
+
+  --p-clr: #029837;
+  --bg-clr: #d3fcce;
+  --sbg-clr: #010133;
+  --wht-clr: white;
+}
+
+/* variables ends */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Mulish", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* default codes ends */
+
+/* compostions */
+
+.hero-box {
+  width: 40%;
+  height: 20%;
+  /* border: 2px solid red; */
+  border-radius: 1em;
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+  -webkit-box-shadow: 5px 1px 15px 1px #000000;
+  box-shadow: 5px 1px 15px 1px #000000;
+}
+
+.bg-img {
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+}
+
+.bg-down {
+  top: 0;
+}
+
+.hero-img {
+  border-top-left-radius: 50%;
+}
+
+/* taglines section */
+
+.taglines-header {
+  text-align: center;
+}
+
+/* feedback section */
+
+.feedback-bg-top {
+  top: 0;
+  right: 0;
+}
+
+.feedback-bg-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr 1fr;
+  align-items: center;
+}
+
+.upper-row p {
+  margin: 0;
+}
+
+.quoation-img {
+  justify-self: end;
+}
+
+/* newsletter section */
+
+form {
+  gap: 1em;
+}
+
+form > input {
+  width: 80%;
+  height: 3.375em;
+  border-radius: 1.25em;
+  border: none;
+  background-color: #f2f1f1;
+  padding-left: 1em;
+}
+
+/* area  */
+
+.area-90 {
+  width: 90%;
+  height: auto;
+}
+
+.wide-90 {
+  min-width: 90%;
+}
+
+.wide-40 {
+  width: 40%;
+}
+
+.crt {
+  text-decoration: underline;
+}
+/* utilities */
+
+/* position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inline {
+  display: inline-block;
+}
+
+/* justification */
+
+.right {
+  justify-self: end;
+}
+
+.left {
+  justify-self: start;
+}
+
+.mid {
+  justify-self: center;
+}
+
+/* font sizes */
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.fs-reg {
+  font-size: var(--fs-reg);
+}
+
+.fs-mreg {
+  font-size: var(--fs-mreg);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+/* font sizes end */
+
+/* font weight starts */
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.light {
+  font-weight: var(--fw-light);
+}
+
+.regular {
+  font-weight: var(--fw-regular);
+}
+
+.e-light {
+  font-weight: var(--fw-extra-light);
+}
+
+/* font weight ends */
+
+/* color profiles */
+
+.primary-color {
+  color: var(--p-clr);
+}
+
+.white-bg {
+  background-color: var(--wht-clr);
+}
+
+.white-clr {
+  color: var(--wht-clr);
+}
+
+.primary-bg {
+  background-color: var(--p-clr);
+}
+
+.secondary-bg {
+  background-color: var(--bg-clr);
+}
+
+.tertiary-bg {
+  background-color: var(--sbg-clr);
+}
+/* color profiles ends */
+
+/* button styles */
+
+.btn {
+  width: 9.8em;
+  height: 3.375em;
+  border: 1px solid var(--p-clr);
+  border-radius: 1.25em;
+}
+
+.ls-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.border {
+  border: 2px solid tomato;
+}
+
+.p-bottom {
+  padding-bottom: 1em;
+}
+
+.p-top {
+  padding-top: 1em;
+}
+
+.py {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.p-right {
+  padding-right: 1em;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 1px 15px 1px #000000;
+  box-shadow: 5px 1px 15px 1px #000000;
+}
+
+.round-1 {
+  border-radius: 1em;
+}
+
+.high-50 {
+  min-height: 90vh;
+}
+
+.high-30 {
+  min-height: 50vh;
+}
+
+.text-center {
+  text-align: center;
+}
+/* end of utilites */
+/* blocks */
+
+/* exceptions */
