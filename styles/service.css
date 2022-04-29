@@ -1,0 +1,71 @@
+/* hero area starts */
+
+.bg-img {
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+}
+
+.bg-down {
+  top: 0;
+}
+
+.hero-img {
+  border-top-left-radius: 50%;
+}
+
+.service-banner {
+  background: url(../images/background-img.png) no-repeat top left;
+  background-origin: content-box;
+}
+
+/* newsletter section */
+
+form {
+  gap: 1em;
+}
+
+form > input {
+  width: 80%;
+  height: 3.375em;
+  border-radius: 1.25em;
+  border: none;
+  background-color: #f2f1f1;
+  padding-left: 1em;
+}
+
+/* newsletter section ends */
+
+/* buttons */
+
+.btn-main {
+  width: 30em;
+}
+
+/* feedback section */
+
+.feedback-bg-top {
+  top: 0;
+  right: 0;
+}
+
+.feedback-bg-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr 1fr;
+  align-items: center;
+}
+
+.upper-row p {
+  margin: 0;
+}
+
+.quoation-img {
+  justify-self: end;
+}
+
+/* feedback section ends */

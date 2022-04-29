@@ -26,7 +26,7 @@
     <!-- utility css -->
     <link rel="stylesheet" href="../styles/utility.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
   </head>
   <body>
     <!-- header-area starts -->
@@ -54,15 +54,15 @@
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./about.html"
-                  >About</a
+                  href="./service.html"
+                  >Services</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./service.html">Services</a>
               </li>
             </ul>
 
@@ -76,98 +76,49 @@
 
     <!-- header-area ends -->
 
-    <!-- hero area starts -->
+    <!-- contact form area starts -->
 
-    <div class="container-fluid px-0">
-      <div class="container wide-90 py">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="fs-xl">Jean Joe - FOUNDER</h1>
-            <p class="fs-reg">
+    <main
+      class="container-fluid px-0 white-bg high-90 d-flex align-items-center"
+    >
+      <div class="container wide-90 py text-center">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-8 col-10">
+            <h1 class="fs-xl bold">Contact Us</h1>
+            <p class="fs-mreg regular wide-80 mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus erat.
+              consectetur justo quis
             </p>
-            <p class="fs-reg">
-              Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed
-              justo mauris, ultricies eu urna at, gravida commodo mauris.
-              Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec
-              sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales
-              ligula nisi, molestie lacinia ex rhoncus vel.
-            </p>
-            <p class="fs-reg">
-              Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed
-              justo mauris, ultricies eu urna at, gravida commodo mauris.
-              Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec
-              sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales
-              ligula nisi, molestie lacinia ex rhoncus vel.
-            </p>
-          </div>
-          <div class="col-lg-6 hero-banner">
-            <div class="float-end relative">
-              <img class="bg-img" src="../images/background-img.png" alt="" />
-              <img class="hero-img" src="../images/service.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- hero area ends -->
-
-    <!-- feedback area starts -->
-    <div
-      class="container-fluid px-0 secondary-bg high-50 d-flex align-items-center"
-    >
-      <div class="container wide-90">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-8 col-10 p-bottom">
-            <h1 class="fs-lg text-center">
-              Are you ready to transfrom your Marriage and Relationship Book a
-              session with us
-            </h1>
-          </div>
-        </div>
-        <div class="row align-items-center justify-content-center p-top">
-          <div class="col-lg-6 cl-sm-8 col-10 text-center">
-            <button class="btn btn-main primary-bg white-clr fs-mreg">
-              Make an Appointment
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- feedback area ends -->
-
-    <!-- newsletter starts -->
-
-    <div
-      class="container-fluid px-0 white-bg d-flex align-items-center high-50"
-    >
-      <div class="container">
-        <div class="row justify-content-center align-content-center">
-          <div class="col-lg-7 col-md-8 col-12 text-center">
-            <h1 class="fs-lg">Subscribe to our newsletter</h1>
-            <p class="fs-reg p-bottom">
-              We recommend you to subscribe to our newsletter , drop your email
-              below to get daliy update about us
-            </p>
-            <form action="#" class="p-top d-flex align-items-center">
+            <form action="#" class="py">
+              <input
+                type="text"
+                name="text"
+                id="text"
+                placeholder="Your full name"
+              />
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter your email address"
+                placeholder="Your email address"
               />
-              <button class="btn primary-bg white-clr">Subscribe</button>
+              <textarea
+                name="msg"
+                id="gsg"
+                cols="30"
+                rows="10"
+                placeholder="Write a note about your request"
+              ></textarea>
+              <button class="btn form-btn primary-bg white-clr bold">
+                Send
+              </button>
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- newsletter ends -->
-
+    <!-- contact form area ends -->
     <!-- footer starts -->
 
     <footer
