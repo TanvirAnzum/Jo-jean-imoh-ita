@@ -1,0 +1,52 @@
+.bg-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hero-img {
+  border-top-left-radius: 50%;
+}
+
+.hero-img-down {
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.hero-banner-down {
+  background: url(../images/background-img.png) no-repeat;
+  background-position: 47% 10%;
+}
+
+/* feedback section */
+
+.feedback-bg-top {
+  top: 0;
+  right: 0;
+}
+
+.feedback-bg-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr 1fr;
+  align-items: center;
+}
+
+.upper-row p {
+  margin: 0;
+}
+
+.quoation-img {
+  justify-self: end;
+}
+
+/* feedback section ends */
+
+.m-bottom {
+  margin-bottom: 2em;
+}
