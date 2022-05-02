@@ -1,0 +1,81 @@
+.screen-area {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-player {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+  height: 25vh;
+  width: 100%;
+}
+
+.main-screen {
+  width: 60%;
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.play-icon {
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.76);
+  border-radius: 50%;
+}
+
+.countdown,
+.countdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+
+.fs-xl {
+  font-size: 4em;
+  line-height: 1;
+}
+
+.row-item {
+  border-radius: 10%;
+  background-color: white;
+  width: 7em;
+  text-align: center;
+}
+
+@media all and (max-width: 992px) {
+  .main-screen {
+    width: 80%;
+  }
+
+  .countdown-row {
+    gap: 6em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .countdown-row {
+    gap: 4em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .countdown-row {
+    gap: 2em;
+  }
+  .row-item {
+    width: 5em;
+  }
+}
