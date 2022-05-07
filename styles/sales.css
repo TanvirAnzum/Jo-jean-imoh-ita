@@ -50,3 +50,24 @@
 .m-bottom {
   margin-bottom: 2em;
 }
+
+@media all and (max-width: 576px) {
+  .taglines-box,
+  .feedback-box {
+    margin-bottom: 2em;
+  }
+
+  .header-area,
+  .body-section {
+    text-align: center;
+  }
+
+  .py {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .last-child {
+    margin-bottom: 8em;
+  }
+}

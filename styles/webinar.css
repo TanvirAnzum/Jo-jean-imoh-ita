@@ -72,3 +72,26 @@
 .p-top {
   padding-top: 3em;
 }
+
+@media all and (max-width: 576px) {
+  .py {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .taglines-box,
+  .feedback-box {
+    margin-bottom: 2em;
+  }
+
+  .feedback-header {
+    margin-top: 6em;
+  }
+  .header-area {
+    text-align: center;
+  }
+
+  .last-child {
+    margin-bottom: 8em;
+  }
+}

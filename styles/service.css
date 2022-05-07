@@ -69,3 +69,17 @@ form > input {
 }
 
 /* feedback section ends */
+
+@media all and (max-width: 576px) {
+  .taglines-box,
+  .feedback-box {
+    margin-bottom: 2em;
+  }
+
+  .feedback-box:last-child {
+    margin-bottom: 8em;
+  }
+  .header-area {
+    text-align: center;
+  }
+}
