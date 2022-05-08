@@ -62,9 +62,9 @@
     text-align: center;
   }
 
-  .py {
-    padding-top: 0;
+  .feedback-header > .py {
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .last-child {
